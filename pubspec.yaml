@@ -33,6 +33,8 @@ dependencies:
 
   url_launcher: ^6.2.1
   youtube_player_flutter: ^8.0.0
+  # persistent_bottom_nav_bar: ^5.0.2
+  persistent_bottom_nav_bar: ^4.0.2
 
 
   # The following adds the Cupertino Icons font to your application.

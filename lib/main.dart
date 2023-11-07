@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:otithee_com_clone/pages/home_page.dart';
+
 //import 'package:otithee_com_clone/pages/home_page.dart';
 
 void main() {
@@ -15,25 +16,12 @@ class MyApp extends StatelessWidget {
         Column(
           children: [
             Expanded(
-              flex: 2,
-
-              child: Image.asset(
-                'assets/images/img_1.png',
-                fit: BoxFit.fitWidth,
-                width: MediaQuery.of(context).size.width,
-              )
-              // child: Container(
-              //   //height: 94,
-              //   width: MediaQuery.of(context).size.width,
-              //   decoration: const BoxDecoration(
-              //     color: Colors.yellow,
-              //     image: DecorationImage(
-              //       image: AssetImage('assets/images/img_1.png'),
-              //       fit: BoxFit.cover,
-              //     ),
-              //   ),
-              // ),
-            ),
+                flex: 2,
+                child: Image.asset(
+                  'assets/images/img_1.png',
+                  fit: BoxFit.fitWidth,
+                  width: MediaQuery.of(context).size.width,
+                )),
             Expanded(
                 flex: 8,
                 child: Container(
@@ -43,12 +31,11 @@ class MyApp extends StatelessWidget {
           ],
         ),
         Container(
-          //height: 20,
-          //color: Color.fromARGB(92, 244, 67, 54),
-          //child: Text('data'),
           child: MaterialApp(
-              debugShowCheckedModeBanner: false,
-              home: HomePage()),
+            debugShowCheckedModeBanner: false,
+            home:HomePage() ,
+            //home: TempPage(),
+          ),
         ),
       ],
     );
